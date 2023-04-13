@@ -24,12 +24,23 @@ Everytime, we install Linux, we install these main components:
 - **System Libraries**: it's responsible to execute tasks as change files permissions and ownership, listing directories
 
 ## Linux in the cloud
-- **A Cloud** is a collection of data centers providing compute, storage, networking, application over the internet.
+
+**A Cloud** is a collection of data centers providing compute, storage, networking, application over the internet.
+
 ## Some populars commands to know as DevOps Engineer and their roles
-If l use Ubuntu, l can run 
+If l use Ubuntu, l can run:
 **lsb_release -a**: To know the version of the Ubuntu distributions
-**uname -r**: To check the version of my kernel
-**ls --version**: give the version of the GNU
+- **uname -r**: To check the version of my kernel
+- **ls --version**: give the version of the GNU
+- **whoami**: Who is the cloud user?
+- **ls**: list the file in the directory
+- **ls -a**: List all files even the hidden files
+- **pwd**: To know my current directory
+- **last**: Show the last person logging in the system and also the time where yhe system was rebooted
+- **uptime**: To see for how long the system is running
+- **clear**: To keep your screen empty
+- **man (infront a command)**: Open the documentation related to a command
+- ** **   
 
 
 ## Some interesting links to learn Linux 
