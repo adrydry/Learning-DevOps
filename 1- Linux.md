@@ -7,6 +7,7 @@ Linux is an operating system which enables communications between the users and 
 - More secure
 - Many distributions
 - No slow time in production
+- Easy to learn
 
 
 ## Linux Distributions
@@ -22,6 +23,8 @@ Everytime, we install Linux, we install these main components:
 - **kernel**: Is the main components of Linux OS because it etablished communication between hardware and software
 - **System Libraries**: it's responsible to execute tasks as change files permissions and ownership, listing directories
 
+## Linux in the cloud
+- **A Cloud** is a collection of data centers providing compute, storage, networking, application over the internet.
 ## Some populars commands to know as DevOps Engineer and their roles
 If l use Ubuntu, l can run 
 **lsb_release -a**: To know the version of the Ubuntu distributions
@@ -29,4 +32,4 @@ If l use Ubuntu, l can run
 **ls --version**: give the version of the GNU
 
 
-## Interviews Questions
+## Some interesting links to learn Linux 
