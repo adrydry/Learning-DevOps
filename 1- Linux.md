@@ -19,12 +19,14 @@ Because Linux is an open source, it has many other flavours. Some of the most po
 
 ## Mains components of Linux or Architecture of Linux
 Everytime, we install Linux, we install these main components:
-**kernel**: Is the main components of Linux OS because it etablished communication between hardware and software
-**System Libraries**: it's responsible to execute tasks
+- **kernel**: Is the main components of Linux OS because it etablished communication between hardware and software
+- **System Libraries**: it's responsible to execute tasks as change files permissions and ownership, listing directories
 
 ## Some populars commands to know as DevOps Engineer and their roles
 If l use Ubuntu, l can run 
-**lsb_release -a**: To know the version of the Ubuntu distributions, l'm using;
+**lsb_release -a**: To know the version of the Ubuntu distributions
+**uname -r**: To check the version of my kernel
+**ls --version**: give the version of the GNU
 
 
 ## Interviews Questions
