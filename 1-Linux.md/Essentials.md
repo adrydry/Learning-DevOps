@@ -40,7 +40,8 @@ If l use Ubuntu, l can run:
 - **uptime**: To see for how long the system is running
 - **clear**: To keep your screen empty
 - **man (infront a command)**: Open the documentation related to a command
-- ** **   
+- **tar xzf** : to unzip a file
+- **htop**: give information       
 
 
 ## Major open sources Applications
