@@ -31,10 +31,12 @@ Everytime, we install Linux, we install these main components:
  ssh username@hostname / ssh username@IP of the host
  to know, the hostname just use the command **hostnamectrl**
  
- ## How Linux is used in virtualization and cloud computing?
+ ## The root File system OF Linux
+ **/** for the root directory;                   **/bin** for users binaries;    **/boot** for static boot files;    **/dev** device files;    **/etc** Configuration files;          **/home**  home directories;         **/lib** shared librairies;    **/mnt** tempory mount points;     **/opt** optional packages;   **/proc** kernel and process files;   **/root** root user home directory;    **/run**  application states files;   **/sbin** system administration binaries;    **/srv** service data;  **/tmp** temporary files;    **/user** user binaries;      **/var** variable data files
    
 
 ## Some populars commands to know as DevOps Engineer and their roles
+Keep in min that Linux is case sensitive. 
 If l use Ubuntu, l can run:
 **lsb_release -a**: To know the version of the Ubuntu distributions
 - **uname -r**: To check the version of my kernel
@@ -42,6 +44,7 @@ If l use Ubuntu, l can run:
 - **whoami**: Who is the cloud user?
 - **ls**: list the file in the directory
 - **ls -a**: List all files even the hidden files
+- **ls directory name**: To list all the files inside a directory
 - **pwd**: To know my current directory
 - **last**: Show the last person logging in the system and also the time where yhe system was rebooted
 - **uptime**: To see for how long the system is running
@@ -53,12 +56,18 @@ If l use Ubuntu, l can run:
 - **scp filename**: to copy a file from my computer to my linux cli
 - **cat /etc/*release**: to see the list of all the release file
 - **cat /etc/*issue*: to see the list of all issues files
-- **ls directory name**: To list all the files inside a directory
 - **wc -l**: give a total of lines of a file
 - **wc -L**: Give the number of characters of the longest line
 - **wc -m**: give the total number of character of the file
--       
+- **$HOME**: Environnement variable used to store home directory path   
 
+## Simple Logging
+
+When is time to run commands, remember that we can use simple logging to go faster. For example, if l have a directory Folders with 5 file: file file1 file2 file3 file4
+
+-**ls file?** or **ls ?????** will display all the file with 5 character long, beginning by file and ending by anything: file1 file2 file3 file4
+-**ls ????** will display all the file with 4 characters: file
+-**ls ????1** will display all the file with 5 characters ending by 1
 
 ## Major open sources Applications
 
