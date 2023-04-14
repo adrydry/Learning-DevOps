@@ -47,12 +47,17 @@ If l use Ubuntu, l can run:
 - **uptime**: To see for how long the system is running
 - **clear**: To keep your screen empty
 - **man (infront a command)**: Open the documentation related to a command
+- **info** Provide more informations than Man command
 - **tar xzf** : to unzip a file
 - **htop**: give information 
 - **scp filename**: to copy a file from my computer to my linux cli
 - **cat /etc/*release**: to see the list of all the release file
 - **cat /etc/*issue*: to see the list of all issues files
--     
+- **ls directory name**: To list all the files inside a directory
+- **wc -l**: give a total of lines of a file
+- **wc -L**: Give the number of characters of the longest line
+- **wc -m**: give the total number of character of the file
+-       
 
 
 ## Major open sources Applications
