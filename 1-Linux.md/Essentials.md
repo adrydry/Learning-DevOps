@@ -23,9 +23,16 @@ Everytime, we install Linux, we install these main components:
 - **kernel**: Is the main components of Linux OS because it etablished communication between hardware and software
 - **System Libraries**: it's responsible to execute tasks as change files permissions and ownership, listing directories
 
-## Linux in the cloud
-
-**A Cloud** is a collection of data centers providing compute, storage, networking, application over the internet.
+## Commands lines basics
+ 
+ In a linux CLI, we have the username and the host and the current working directory represents by a title ~. The command prompt is represents by $ at the end of the script. After the command prompt, we have the command and when we run this command, the **output** will display
+ 
+ ## How to connect from my local desktop to linux?
+ ssh username@hostname / ssh username@IP of the host
+ to know, the hostname just use the command **hostnamectrl**
+ 
+ ## How Linux is used in virtualization and cloud computing?
+   
 
 ## Some populars commands to know as DevOps Engineer and their roles
 If l use Ubuntu, l can run:
@@ -41,7 +48,11 @@ If l use Ubuntu, l can run:
 - **clear**: To keep your screen empty
 - **man (infront a command)**: Open the documentation related to a command
 - **tar xzf** : to unzip a file
-- **htop**: give information       
+- **htop**: give information 
+- **scp filename**: to copy a file from my computer to my linux cli
+- **cat /etc/*release**: to see the list of all the release file
+- **cat /etc/*issue*: to see the list of all issues files
+-     
 
 
 ## Major open sources Applications
@@ -84,9 +95,7 @@ If l use Ubuntu, l can run:
  - **Red hat Package Manager (RPM)**: to install this package: 1- sudo rpm -i htop rpm file, 2- run htop command to run the htop application and 3- remove the htop by using sudo rpm -e htop
  - **yum package** for fedora
  
- ## Commands lines basics
  
- In a linux CLI, we have the username and the host and the current working directory represents by a title ~. The command prompt is represents by $ at the end of the script. After the command prompt, we have the command and when we run this command, the **output** will display
  
  
 
