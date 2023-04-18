@@ -56,7 +56,7 @@ If l use Ubuntu, l can run:
 - **scp filename**: to copy a file from my computer to my linux cli
 - **cat /etc/*release**: to see the list of all the release file
 - **cat /etc/*issue*: to see the list of all issues files
-- **wc -l**: give a total of lines of a file
+- **wc -l filename**: give a total of lines of a file
 - **wc -L**: Give the number of characters of the longest line
 - **wc -m**: give the total number of character of the file
 - **$HOME**: Environnement variable used to store home directory path
@@ -64,7 +64,12 @@ If l use Ubuntu, l can run:
 - **rm -rf** to remove many files at once
 - **rm filename**: to remove one file
 - **echo 'xxxxxxx' >> filename** put directly a content inside an existant file
--  
+- **grep** is used to search a word inside a file. Ex: grep word filename 
+- **grep -E ^x filename** use to display all the word of the file beginning by X
+- **pipe** or **|** is used to display an output from another command. Ex: cat filename **|** grep word, or cat filename **|** grep word **|** wc -l
+- **!command** will display the last time the command was used.  Ex: !wc or !cat
+- **cat /etc/password** to see list of users of the home directory. To see for a specific user, use cat /etc/password **|** **grep** username. If l just want the home directory, l can use cat /etc/password **|** **grep** username **|** **cut -d: column number oh the home directory**
+- 
 - 
 -    
 
