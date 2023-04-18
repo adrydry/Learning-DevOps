@@ -73,7 +73,7 @@ If l use Ubuntu, l can run:
 - **>>** to redirect in a same file the result of another research. The result 1 and result 2 will go inside the same file otherwise the 2nd result will erase the 1rst one
 - **| sort** will help to display a result in the alphabetical way. EX cat filename | sort. If l want to put the result in a new file, l will use ** cat filename | sort > **sorted.txt**
 - **grep xxx < sorted.txt** to enable a particular content inside sorted.txt
-- 
+- **  
 - 
 - 
 -    
