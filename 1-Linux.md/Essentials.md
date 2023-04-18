@@ -59,7 +59,10 @@ If l use Ubuntu, l can run:
 - **wc -l**: give a total of lines of a file
 - **wc -L**: Give the number of characters of the longest line
 - **wc -m**: give the total number of character of the file
-- **$HOME**: Environnement variable used to store home directory path   
+- **$HOME**: Environnement variable used to store home directory path
+- **tar**: is used to create archive (-c: to create archive, -x :extract archive, -r: append to an archive; -t: list the contents of an archive, -f read from or write to a file)
+- 
+-    
 
 ## Simple Logging
 
