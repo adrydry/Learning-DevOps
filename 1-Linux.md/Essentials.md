@@ -60,7 +60,11 @@ If l use Ubuntu, l can run:
 - **wc -L**: Give the number of characters of the longest line
 - **wc -m**: give the total number of character of the file
 - **$HOME**: Environnement variable used to store home directory path
-- **tar**: is used to create archive (-c: to create archive, -x :extract archive, -r: append to an archive; -t: list the contents of an archive, -f read from or write to a file)
+- **tar**: is used to create archive (-c: to create archive, -x :extract archive, -r: append (add) to an archive; -t: list the contents of an archive, -f read from or write to a file) EX: tar -cf archive.tar test_file_*; tar tf archive.tar; tar rf archive.tar file* or file?; tar xf archive.tar filename;
+- **rm -rf** to remove many files at once
+- **rm filename**: to remove one file
+- **echo 'xxxxxxx' >> filename** put directly a content inside an existant file
+-  
 - 
 -    
 
@@ -112,7 +116,14 @@ When is time to run commands, remember that we can use simple logging to go fast
  - **Red hat Package Manager (RPM)**: to install this package: 1- sudo rpm -i htop rpm file, 2- run htop command to run the htop application and 3- remove the htop by using sudo rpm -e htop
  - **yum package** for fedora
  
+ ## Absolute and relative Path
  
+ A **Path** is a unique location of a file or directory.
+ **Relative path** is related to the path where we are now by doing **pwd** or cat ../file1 
+ **Absolute path** will be taking in consideration the entire file system. Ex: /home/xxxx/xxxx/file1 
+ 
+ With the absolute path, we can cat the file1 from any other location but with the relative path l need to be in the directory where the file 1 is located before using cat. The relative path will always begin by **/** or absolute path can begin by everything.
+ Ex: /home/cloud_user/file1      Relative path: file1                                Absolute path: /home/cloud_user/file1
  
  
 
