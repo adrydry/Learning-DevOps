@@ -68,7 +68,12 @@ If l use Ubuntu, l can run:
 - **grep -E ^x filename** use to display all the word of the file beginning by X
 - **pipe** or **|** is used to display an output from another command. Ex: cat filename **|** grep word, or cat filename **|** grep word **|** wc -l
 - **!command** will display the last time the command was used.  Ex: !wc or !cat
-- **cat /etc/password** to see list of users of the home directory. To see for a specific user, use cat /etc/password **|** **grep** username. If l just want the home directory, l can use cat /etc/password **|** **grep** username **|** **cut -d: column number oh the home directory**
+- **cat /etc/password** to see list of users of the home directory. To see for a specific user, use cat /etc/password **|** **grep** username. If l just want the home directory, l can use cat /etc/password **|** **grep** username **|** **cut -d: column number oh the home directo*
+- **>** used for redirection. EX: cat filename | grep xxxxx will result 5 lines. If l want this result to directly go inside a file l can use cat filename | grep xxxxx **>** new filename
+- **>>** to redirect in a same file the result of another research. The result 1 and result 2 will go inside the same file otherwise the 2nd result will erase the 1rst one
+- **| sort** will help to display a result in the alphabetical way. EX cat filename | sort. If l want to put the result in a new file, l will use ** cat filename | sort > **sorted.txt**
+- **grep xxx < sorted.txt** to enable a particular content inside sorted.txt
+- 
 - 
 - 
 -    
