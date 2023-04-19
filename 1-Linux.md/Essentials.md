@@ -119,7 +119,7 @@ When is time to run commands, remember that we can use simple logging to go fast
 4- File Sharing applications
 - **Samba**: it performs, on local network, files and print services, authentification and authorisation,...
 - **NFS**: it is a distributed file protocols permitting client hosts to access files and directoriesover the network as local storage
-
+ 
 5- Cloud applications
 - **Owncloud** can be used to create our private cloud and use it as Dropbox
 - **Nextcloud**: it's forked from owncloud
