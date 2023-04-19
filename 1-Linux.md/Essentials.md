@@ -87,6 +87,10 @@ If l use Ubuntu, l can run:
 - **/word** at the end of the file, helps to search a specific word inside the file
 - **:set nu** to give number to each line of the file
 - **lscpu** used to get CPU information of the system
+- **ps aux | wc -l** to see the number of running processes
+- **cat /proc/loadavg** to see the current system load ou **uptime**
+- **ps -U username | wc -l** to see the number of processes running as username
+- 
 - **cat /proc/cpuinfo** to have infos about the cpu, the type of cpu
 - **free** to see the number of Ram available. to see that in megabytes add **-m**
 - **df -h** for see number of secondary storage (hdd/ssd/dvd) available; and search /dev/xvda1
