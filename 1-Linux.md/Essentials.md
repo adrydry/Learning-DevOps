@@ -15,8 +15,16 @@ Because Linux is an open source, it has many other flavours. Some of the most po
 - Centos;
 - Debian;
 - Redhat;
-- Ubuntu;
+- Ubuntu;.  
 - Fedora
+
+## Linux distributions lifecycle
+
+**Standard distribution Release** Also known as a point release, a standard distribution release is made available after a development period. During this development period, all software is updated to a version and then frozen and tested to verify that all software versions work well together. Updates are released to address important bugs ans security concerns.
+
+**Rolling Release** The distribution is always kept up to date using small and frequent updates to the core of the OS. New versions of software are added as they arrive
+
+
 
 ## Mains components of Linux or Architecture of Linux
 Everytime, we install Linux, we install these main components:
@@ -73,13 +81,20 @@ If l use Ubuntu, l can run:
 - **>>** to redirect in a same file the result of another research. The result 1 and result 2 will go inside the same file otherwise the 2nd result will erase the 1rst one
 - **| sort** will help to display a result in the alphabetical way. EX cat filename | sort. If l want to put the result in a new file, l will use ** cat filename | sort > **sorted.txt**
 - **grep xxx < sorted.txt** to enable a particular content inside sorted.txt
-- **  
+- **gg** to go to the first line of the file 
+- **G** go to the last line of the file
+- **nG** go to the n line of the file
+- **/word** at the end of the file, helps to search a specific word inside the file
+- **:set nu** to give number to each line of the file
+- **lscpu** used to get CPU information of the system
+- **cat /proc/cpuinfo** to have infos about the cpu, the type of cpu
+- **free** to see the number of Ram available. to see that in megabytes add **-m**
+- **df -h** for see number of secondary storage (hdd/ssd/dvd) available; and search /dev/xvda1
+- **ifconfig** used to assign an address to a network interface and to configure or display the current network interface configuration information.
 - 
-- 
--    
 
 ## Simple Logging
-
+k interface 
 When is time to run commands, remember that we can use simple logging to go faster. For example, if l have a directory Folders with 5 file: file file1 file2 file3 file4
 
 -**ls file?** or **ls ?????** will display all the file with 5 character long, beginning by file and ending by anything: file1 file2 file3 file4
