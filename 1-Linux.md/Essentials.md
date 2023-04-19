@@ -91,12 +91,14 @@ If l use Ubuntu, l can run:
 - **ps aux | wc -l** to see the number of running processes
 - **cat /proc/loadavg** to see the current system load ou **uptime**
 - **ps -U username | wc -l** to see the number of processes running as username
-- 
+- **ping ip address** is used to verify is a particular ip address exist in our network
+- **ping -c 1 url** is used to transform a url in an ip address
 - **cat /proc/cpuinfo** to have infos about the cpu, the type of cpu
 - **free** to see the number of Ram available. to see that in megabytes add **-m**
 - **df -h** for see number of secondary storage (hdd/ssd/dvd) available; and search /dev/xvda1
 - **ifconfig** used to assign an address to a network interface and to configure or display the current network interface configuration information.
 - **dsmesg** used to see all messages inside the kernel
+- 
 
 ## The most important logs in Linux OS
 **/var/log/messages** General system logs and messages
