@@ -91,7 +91,18 @@ If l use Ubuntu, l can run:
 - **free** to see the number of Ram available. to see that in megabytes add **-m**
 - **df -h** for see number of secondary storage (hdd/ssd/dvd) available; and search /dev/xvda1
 - **ifconfig** used to assign an address to a network interface and to configure or display the current network interface configuration information.
-- 
+- **dsmesg** used to see all messages inside the kernel
+
+## The most important logs in Linux OS
+**/var/log/messages** General system logs and messages
+**/var/log/syslog** For Debian based systems. Is the general logs for the system
+**/var/log/auth.log** Authentification logs
+**/var/log/secure** for red hat based systems
+**/var/log/boot.log** system boot logs 
+**/var/log/cron.log** cron job logs
+**/var/log/kern.log** kernel logs
+**/var/log/faillog** Authentification failure logs
+
 
 ## Simple Logging
 k interface 
