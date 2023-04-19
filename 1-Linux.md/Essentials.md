@@ -86,6 +86,7 @@ If l use Ubuntu, l can run:
 - **nG** go to the n line of the file
 - **/word** at the end of the file, helps to search a specific word inside the file
 - **:set nu** to give number to each line of the file
+- **ip addr show** will give the differents ip address connected in our system
 - **lscpu** used to get CPU information of the system
 - **ps aux | wc -l** to see the number of running processes
 - **cat /proc/loadavg** to see the current system load ou **uptime**
