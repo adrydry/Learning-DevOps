@@ -87,7 +87,7 @@ If l use Ubuntu, l can run:
 - **/word** at the end of the file, helps to search a specific word inside the file
 - **:set nu** to give number to each line of the file
 - **ip addr show** will give the differents ip address connected in our system
-- **ip route show** show us the current routing table 
+- **ip route show** show us the current routing table (gateway)  
 - **lscpu** used to get CPU information of the system
 - **ps aux | wc -l** to see the number of running processes
 - **cat /proc/loadavg** to see the current system load ou **uptime**
@@ -102,6 +102,7 @@ If l use Ubuntu, l can run:
 - 
 
 ## The most important logs in Linux OS
+
 **/var/log/messages** General system logs and messages
 **/var/log/syslog** For Debian based systems. Is the general logs for the system
 **/var/log/auth.log** Authentification logs
@@ -110,6 +111,23 @@ If l use Ubuntu, l can run:
 **/var/log/cron.log** cron job logs
 **/var/log/kern.log** kernel logs
 **/var/log/faillog** Authentification failure logs
+
+## ROOT AND USERS
+
+**root user** is the admin account of the entire system. The root always has **0** as group id and iud
+**sudo** gives the ability to a user to execute commands with elevated privileges. this user need to be part of the sudo group or list in the sudoersfile
+**/etc/passwd** contains the following infos for each user - username, password, user id, group id, long name, home directory, login shell. to see all users
+**/etc/group** to see all the groups
+**/etc/shadow** contains actual passwords for each local user in an encrypted form. Each line contains 8 fields - username, password, lastchanged, min of days between password changes, maximum number of days betwwen password, warn-number of days before password expiration to warn user, inactive, expire  
+**getent passwd username** is used to find the home directory of a user 
+**useradd** to add or create users
+**sudo usermod -a -G groupname username** to put a username inside a group 
+**for i in user1 user2 user3 ...user4;do sudo useradd -m $i;done** to create many users at the same time
+**tail filename** to see the last line of a file
+**groupadd** to create groups
+**for i in group1 group2 group3; do sudo usermod -a -G $i username; done** to put a user in many groups at once
+**for name in user1 user2 user3;do sudo usermod -a -G groupname $name; done** to put many user in a group at once;
+**
 
 
 ## Simple Logging
