@@ -1,3 +1,7 @@
+## What is Python?
+
+Developped in 1990, Python is a high level interpreted language that can be used by many kind of applications. 
+
 ## Initial Setup
 To set up our environnement, we have 3 ways:
 
@@ -23,3 +27,8 @@ We will see how to install the python interpreter and how to connect to the pyth
 ***steps for pip***
 - sudo dnf install python3-pip
 - python --version and pip --version need to match otherwise python will be not able to communicate with the interpreter 
+- pip ls
+
+## Variables, Data types and operators
+
+
