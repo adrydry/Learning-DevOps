@@ -54,13 +54,16 @@ When you installed k8s on a system, you're actually installing the following com
 ### Worker node
 - **kubelet** is the agent that runs on each node in the cluster. The agent is responsible for making sure that the containers are running on the nodes as expected. it is responsible for interacting with a master to provide health information of the worker node and carry out actions requested by the master on the worker nodes
 - **Container runtime** is the software used to run containers (Docker)
-
+ to know
 ## Kubectl 
 Is used to deploy and manage applications on a k8s cluster. 
 - **kubectl run hello-minikube** to get cluster information, to get the status of other nodes in the cluster and to manage many other things, ... just run the command 
 - **kubectl cluster-info** To have a view information about the cluster and the kubectl run 
 - **kubectl get nodes** to list all the nodes part of the cluster
+- **kubectl get nodes -o wide
 
+## YAML
+is used to represent configuration files.  
 
 
 
