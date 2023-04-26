@@ -33,3 +33,60 @@ Every OS has 2 parts: the kernel and the Software. **the kernel** is responsible
  - Easy to set up but lacks some the advanced features required for complex applications
  - k8s is popular but it's difficult to set up and get started by provides a lot of options to customize deployments and supports deployment of complex architectures
  - 
+
+## Kubernetes Architecture
+
+**A node or minions** is a machine, physical or virtual on which k8s is installed. A node is a worker machine where containers will be launched by k8s. We need to have many nodes to be able to manage incase one node goes down, that's called **cluster**. A cluster is a set of nodes grouped together so that if one node fails you have your application still accessible from the other nodes
+
+Who is responsible to manage the nodes? where is the information about members of the cluster stored? How are the nodes monitored? When the nodes fails how do you move the workload of the field node to another worker node? **The master** is another node with k8s installed in it and is configured as a Master. The master watches over the nodes in the cluster and is responsible for the actual orchestration of containers on the worker nodes
+
+
+![image](https://user-images.githubusercontent.com/102819001/234431866-f7230285-11b0-4b71-81e6-1b9fb165f684.png)
+
+## Components of the Kubernetes
+
+When you installed k8s on a system, you're actually installing the following components:
+### Master Node
+- **API server** acts as a frontend for k8s. the users, management devices, command line interfaces, all talk to the apiserver to interact with the k8s cluster
+- **etcd service** is the database. It stores all data used to manage cluster in a distributed manner. It responsible to implement logs within the cluster to ensure thatthere are no conflicts between the masters
+- **controller manager** is the brain behind orchestration.They are responsible for noticing and responding when nodes, containers or end points goes down. the controller makes decision to bring up new containers
+- **Scheduler** is responsible for distributing containers across multiples nodes. It looks for newly containers and assign them to nodes
+### Worker node
+- **kubelet** is the agent that runs on each node in the cluster. The agent is responsible for making sure that the containers are running on the nodes as expected. it is responsible for interacting with a master to provide health information of the worker node and carry out actions requested by the master on the worker nodes
+- **Container runtime** is the software used to run containers (Docker)
+
+## Kubectl 
+Is used to deploy and manage applications on a k8s cluster. 
+- **kubectl run hello-minikube** to get cluster information, to get the status of other nodes in the cluster and to manage many other things, ... just run the command 
+- **kubectl cluster-info** To have a view information about the cluster and the kubectl run 
+- **kubectl get nodes** to list all the nodes part of the cluster
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
