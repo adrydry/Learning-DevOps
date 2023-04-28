@@ -33,3 +33,43 @@
 31. One question related to shell scripting.
 32. 2-3 questions of Jenkins: what is ci/cd, and others i forgot.
 33. difference between application and network load balancer.
+
+
+
+
+Interview Questions about Kubernetes:-
+#Kubernetes:
+1. What is Kubernetes and why is it important in container orchestration?
+2. Explain the Kubernetes architecture and its components.
+3. What is a pod in Kubernetes?
+4. How does Kubernetes manage containerized applications?
+5. What are the different types of Kubernetes services?
+6. What are Kubernetes deployments?
+7. What is Kubernetes StatefulSet?
+8. What are Kubernetes ConfigMap and Secret?
+9. How do you troubleshoot Kubernetes cluster issues?
+10. What are some best practices for Kubernetes deployment?
+
+#Istio:
+1. What is Istio and why is it important in service mesh?
+2. What are the key features of Istio?
+3. What is the architecture of Istio?
+4. How does Istio integrate with Kubernetes?
+5. What is Istio's traffic management?
+6. What are the different types of Istio gateways?
+7. What is Istio VirtualService?
+8. How do you secure services in Istio?
+9. What is Istio telemetry?
+10. What are some best practices for Istio deployment?
+
+#Helm:
+1. What is Helm and why is it important in Kubernetes?
+2. What is a chart in Helm?
+3. How do you create a Helm chart?
+4. What is a Helm release?
+5. What is the difference between Helm and Kubernetes YAML files?
+6. How does Helm manage dependencies?
+7. What is the Helm CLI?
+8. How do you install and upgrade a Helm chart?
+9. What are some best practices for Helm chart development?
+10. How do you troubleshoot Helm issues?
