@@ -73,3 +73,18 @@ Interview Questions about Kubernetes:-
 8. How do you install and upgrade a Helm chart?
 9. What are some best practices for Helm chart development?
 10. How do you troubleshoot Helm issues?
+11. https://t.me/c/1899358652/12579
+12. https://t.me/c/1899358652/11665
+13. https://t.me/c/1899358652/11262
+14. https://t.me/c/1899358652/11263
+15. https://t.me/c/1899358652/11094
+16. https://t.me/c/1899358652/9882
+17. https://t.me/c/1899358652/9792
+18. https://t.me/c/1899358652/7629
+19. https://t.me/c/1899358652/7630
+20. https://t.me/c/1899358652/7631
+21. https://t.me/c/1899358652/7634
+22. https://t.me/c/1899358652/7055
+23. https://t.me/c/1899358652/7056
+24. https://t.me/c/1899358652/3789
+25. https://t.me/c/1899358652/3361
