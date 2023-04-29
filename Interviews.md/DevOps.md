@@ -73,18 +73,41 @@ Interview Questions about Kubernetes:-
 8. How do you install and upgrade a Helm chart?
 9. What are some best practices for Helm chart development?
 10. How do you troubleshoot Helm issues?
-11. https://t.me/c/1899358652/12579
-12. https://t.me/c/1899358652/11665
-13. https://t.me/c/1899358652/11262
-14. https://t.me/c/1899358652/11263
-15. https://t.me/c/1899358652/11094
-16. https://t.me/c/1899358652/9882
-17. https://t.me/c/1899358652/9792
-18. https://t.me/c/1899358652/7629
-19. https://t.me/c/1899358652/7630
-20. https://t.me/c/1899358652/7631
-21. https://t.me/c/1899358652/7634
-22. https://t.me/c/1899358652/7055
-23. https://t.me/c/1899358652/7056
-24. https://t.me/c/1899358652/3789
-25. https://t.me/c/1899358652/3361
+
+https://t.me/c/1560352164/725
+https://t.me/c/1560352164/726
+https://t.me/c/1560352164/727
+https://t.me/c/1560352164/728
+12. https://t.me/c/1899358652/12579
+13. https://t.me/c/1899358652/11665
+14. https://t.me/c/1899358652/11262
+15. https://t.me/c/1899358652/11263
+16. https://t.me/c/1899358652/11094
+17. https://t.me/c/1899358652/9882
+18. https://t.me/c/1899358652/9792
+19. https://t.me/c/1899358652/7629
+20. https://t.me/c/1899358652/7630
+21. https://t.me/c/1899358652/7631
+22. https://t.me/c/1899358652/7634
+23. https://t.me/c/1899358652/7055
+24. https://t.me/c/1899358652/7056
+25. https://t.me/c/1899358652/3789
+26. https://t.me/c/1899358652/3361
+27. https://t.me/c/1899358652/3085
+28. https://t.me/c/1899358652/2688
+29. https://t.me/c/1899358652/2685
+30. https://t.me/c/1899358652/2688
+31. https://t.me/c/1899358652/2018
+32. https://t.me/c/1899358652/1466
+33. https://t.me/c/1899358652/1155
+34. https://t.me/c/1899358652/1073
+35. https://t.me/c/1899358652/1074
+36. https://t.me/c/1899358652/322
+37. https://t.me/c/1899358652/321
+38. https://t.me/c/1899358652/228 300 questions
+39. https://t.me/c/1899358652/97
+40. 
+
+
+
+
