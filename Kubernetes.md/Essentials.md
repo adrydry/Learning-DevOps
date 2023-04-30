@@ -63,7 +63,15 @@ Is used to deploy and manage applications on a k8s cluster.
 - **kubectl get nodes -o wide
 
 ## YAML
-is used to represent configuration files.  
+is used to represent configuration files.  In k8s, yaml file contains always these infos:
+**apiversion**: is the version of the k8s API you're using to create objects. we must use the right API version 
+
+**kind**:
+
+**metadata**:
+
+
+**spec**:
 
 
 
