@@ -64,14 +64,17 @@ Is used to deploy and manage applications on a k8s cluster.
 
 ## YAML
 is used to represent configuration files.  In k8s, yaml file contains always these infos:
+
 **apiversion**: is the version of the k8s API you're using to create objects. we must use the right API version 
 
-**kind**:
+**kind**: the type of pod we need Deployement/service/persistentVolumeClaim
 
-**metadata**:
+**metadata**: the type of application
 
 
 **spec**:
+
+infront of every application pod, you have a service pod to expose our application. so they will have the same port. they have the selector label between them to manage the traffic of the request
 
 
 
