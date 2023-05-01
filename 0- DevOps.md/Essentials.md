@@ -605,3 +605,102 @@ can become very, very complex.
 You're going to need configuration management
 in order to manage that complexity
 in a stable and maintainable way.
+
+
+## MONITORING
+
+Monitoring is the collection and presentation of data
+about the performance and stability
+of services and infrastructure.
+Within a DevOps culture, monitoring is very important.
+It supports frequent deployments and fast time-to-market
+by allowing you to quickly respond to any problems
+that are caused by those frequent deployments.
+And, of course, it supports stability for the same reason,
+by allowing you to quickly address any problems
+that could be affecting stability.
+Monitoring tools collect data about things
+such as memory usage, CPU, disk I/O,
+and usage of other resources over time.
+You can also collect application logs,
+information about network traffic,
+and a lot of other data that you can use to gain insight
+into the health and performance of your infrastructure.
+The collected data is then presented in various forms.
+You can have charts and graphs that people can look at
+in order to see how things are performing.
+You can also use this data in the form
+of real-time notifications about problems.
+So, if your monitoring tools notice that there's a problem
+in production, they could immediately notify you,
+so that you can do something to fix that problem.
+Hopefully, before customers even notice it.
+So, what does monitoring look like?
+Well, one way it can look is real-time notifications.
+Let's say that performance on our website is starting
+to slow down; response times are getting longer and longer.
+The monitoring tool is watching our response times,
+and notices that they're growing,
+and immediately notifies an administrator,
+so that the administrator is able to intervene before
+that performance degradation leads to actual downtime.
+Another use case of monitoring
+involves post-mortem analysis.
+That means looking at something after the fact.
+So, let's say, that something went wrong
+in production last night. It's working now.
+Production is back up. The customers are happy,
+but we still don't know what caused
+the problem that occurred last night.
+Luckily, our monitoring tools have actually collected
+a lot of data during that outage,
+and that data is now available to us.
+So, in this scenario, let's say that we looked at the data
+and the developers and operations engineers are able
+to determine the root cause of last night's outage.
+It just happened to be a poorly performing SQL query. But
+now that we know what the cause was, we're able to fix it.
+So, why should you do monitoring?
+Well, the first reason is fast recovery.
+The sooner we detect a problem, the sooner we can fix it.
+We want to know about a problem before our customer does.
+When something goes wrong in production,
+the worst case scenario is for me to find out about it
+by getting a call from a customer.
+I want to know about that problem
+before the customer calls me and already be working
+to resolve it and, potentially, even resolve it
+before the customer experiences the problem.
+Monitoring also offers better root cause analysis.
+The more data we have about our production systems,
+the easier it is to determine the root cause
+of any particular problem. Without good monitoring
+many times we wind up making guesses
+about what caused a problem to occur in production.
+And therefore, we don't really have the tools
+or information that we need to effectively fix
+those problems for the future.
+Monitoring is very important within a DevOps context
+because it's one of the primary ways
+that we can offer visibility into production systems
+across teams, not just operations teams,
+but also development teams.
+Good monitoring tools give us useful data
+that can be used by both developers and operations people
+to understand the performance of code in production,
+and potentially do optimizations to improve performance.
+And another great benefit of monitoring
+is automated response. Data that comes
+from monitoring tools can be used
+alongside orchestration tools,
+and other types of automation tools
+to provide automated responses to events.
+For example, automated recovery from failures.
+Monitoring tools can be used to detect problems,
+for example, and then an orchestration tool
+could be used to respond to that data
+by isolating the broken node,
+and replacing it with healthy ones.
+Monitoring is essential to bringing together fast delivery
+and stability, especially in complex systems,
+and especially at large scales.
