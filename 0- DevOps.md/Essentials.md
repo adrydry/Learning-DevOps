@@ -168,3 +168,101 @@ In the next lesson, we'll tell some stories
 that will actually help us understand
 the differences between a traditional culture
 and a DevOps culture in a very practical way.
+
+## What is build automation
+Build automation is automating the process of preparing code
+for deployment to a live environment.
+So depending on what programming languages
+or frameworks are used to create the code,
+many times code needs things done to it
+before it's ready for deployment.
+It may need to be compiled.
+It may need to be linted, minified, transformed.
+It may need to have unit tests run against it.
+And build automation means taking all of these steps
+and automating them so that they occur in a consistent
+and automated way.
+And this is usually done using a build script
+and/or a build tool.
+What tools are used to do build automation
+are usually different
+depending on what programming languages
+and frameworks are being used,
+but the one thing that build automation tools
+all have in common is automation.
+So what does build automation look like?
+Usually, it looks like running a command line tool
+that builds code using configuration files or scripts
+that are treated as part of the source code.
+So what that means is
+if your code is committed to source control,
+say it's committed to Git,
+any configuration files or scripts
+that are required to execute the build automation
+would be committed alongside the source code.
+Then I could check out or clone your source code
+and using the same build tool,
+execute the build on my machine.
+Build automation is independent of an IDE.
+Back in the old days,
+a lot of people used to build their code directly in an IDE.
+They would go into their IDE
+and they would click on Compile or click on Build,
+and that would generate some kind of artifact
+that could then be handed off for deployment,
+but good build automation happens independently of an IDE.
+Even if it is possible
+to execute the build automation within the IDE,
+it should also be able to work the same way
+outside of an IDE.
+And this is important because it enables us to do things
+like execute builds on a continuous integration server.
+Another important thing about good build automation
+is that it should be agnostic of the configuration
+of the machine that it is built on.
+What that means is that if you can build the code
+on your machine, I can also build the code on my machine.
+And if we use a continuous integration server,
+we can build the code there as well
+and get the same result in all 3 places.
+So why should you do build automation?
+Well, first, build automation is fast.
+It automates tasks that otherwise
+might have to be done manually, which saves time.
+Secondly, and even more importantly,
+build automation is consistent.
+Because the build happens the same way every time,
+we eliminate problems and confusion
+that arise from manual builds
+that might be done a little bit differently
+every single time.
+Build automation is also repeatable.
+That means I can take the same version out of source control
+and build it multiple times
+and get the same result every time.
+Any particular version of the source code can be transformed
+into deployable code in a consistent way.
+Build automation is also portable.
+Because the build can be done
+in the same way on any machine,
+any member of a team can build the code on their machine,
+as well as building the code on a shared build server
+like a continuous integration server.
+Building code does not depend on specific individuals,
+and it does not depend on specific machines.
+And finally, build automation is more reliable.
+Because it's automated, there will be fewer problems
+that are caused by badly done manual builds.
+I hope that this lesson
+has helped you to understand build automation.
+Build automation is really a developer-centric process.
+Operations engineers oftentimes
+don't have to worry about it.
+Build automation is very important to developers.
+If you're a developer who is not using build automation,
+I would highly encourage you to do so.
+And if you're an operations engineer,
+try and understand how important build automation is
+to the development teams you're working with.
+And if they are not using build automation,
+it might be worth trying to persuade them to look into it.
