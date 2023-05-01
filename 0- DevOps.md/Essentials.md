@@ -266,3 +266,143 @@ try and understand how important build automation is
 to the development teams you're working with.
 And if they are not using build automation,
 it might be worth trying to persuade them to look into it.
+
+
+## Continuous Deployment and Continuous Delivery
+Continuous Delivery,
+which is sometimes just called CD,
+is the practice of continuously maintaining code
+in a deployable state.
+That means that regardless of whether or not the decision
+is actually made to deploy a particular version of the code,
+that code is always in a state that is able to be deployed.
+That means that the decision of whether or not to deploy
+is purely a business decision.
+Do we want to deploy these particular features at this time?
+And when you go to the development team and say,
+"We want to deploy the code."
+They're never going to say,
+"Well, there's a bunch of work that we have to do
+"in order to get code ready for deployment."
+In Continuous Delivery,
+the code is always ready for deployment.
+Some people use the terms Continuous Delivery
+and Continuous Deployment interchangeably,
+or they simply use the abbreviation CD.
+And of course,
+if you use CD,
+people don't necessarily know whether you're talking
+about Continuous Delivery or Continuous Deployment.
+However, these are actually two separate concepts
+even though they are very closely related.
+So what is Continuous Deployment?
+Continuous Deployment is the practice
+of frequently deploying small code changes to production.
+So with Continuous Delivery,
+we are keeping the code in a state
+that is able to be deployed.
+Continuous Deployment means
+that we are actually doing the deployment frequently.
+Some companies that do Continuous Deployment
+are deploying to production multiple times a day,
+but there's no standard for how often you should deploy.
+In general, however,
+the more often you deploy, the better.
+With Continuous Deployment,
+deployments to production are a routine commonplace event.
+They're not a big scary event that only happens very rarely.
+So what does it look like when you do Continuous Delivery
+and Continuous Deployment?
+Well, each version of the code
+goes through a lot of automation.
+It will go through a series of stages,
+such as an automated build, automated testing,
+perhaps automated packaging,
+and maybe some manual stages too,
+such as manual acceptance testing.
+The result of this process
+is that a version of the code becomes an artifact
+or package that is ready to be deployed
+in an automated way.
+And when the decision is made to deploy,
+the process of actually deploying that artifact
+is also automated.
+What this automated deployment looks like
+is going to depend on the architecture
+and what type of code is being deployed.
+But no matter what that architecture is,
+there's always one thing in common
+with Continuous Deployment:
+the deployment is automated.
+With Continuous Delivery and Continuous Deployment,
+if a deployment causes a problem,
+it can be quickly and reliably rolled back.
+Again, using an automated process.
+Hopefully, this can be done
+before the customer even notices the problem.
+But rollbacks aren't a big deal for developers
+because the developers can redeploy a fixed version
+as soon as they have one available.
+Rollbacks are not an obstacle
+for developers getting their features in front of customers
+because they can quickly roll forward again
+once they have a fix.
+And most importantly,
+no one grips their desk in fear during a deployment.
+Even if the deployment does cause a problem,
+a rollback is readily available to prevent an outage.
+So deployments are commonplace every day events
+that happen all the time,
+and it's not a big deal.
+So why should you do Continuous Delivery
+and Continuous Deployment?
+Well, Continuous Delivery and Continuous Deployment
+are great practices for achieving a faster time-to-market.
+They let you get features in the hands of customers quickly
+rather than waiting for a lengthy
+and cumbersome deployment process
+that only happens once every couple weeks or once a quarter.
+There will be fewer problems caused
+by the deployment process.
+Many times, the most difficult processes in IT
+are the ones that are rarely used
+because the IT team doesn't have an incentive
+to really fix the underlying problems with those processes.
+But when you do deployments frequently,
+that process is frequently used and frequently exercised
+and problems with the process
+are easily discovered and quickly fixed.
+Continuous Deployments are much lower risk.
+The more changes you deploy at once,
+the higher the risk.
+Frequent deployments involve deploying
+only a small number of changes at a time.
+So with fewer changes in that one deployment,
+there is less risk that that particular deployment
+is going to cause a problem.
+Another benefit of Continuous Delivery
+and Continuous Deployment is reliable rollbacks.
+Because these processes require robust automation,
+it means that rollbacks benefit from that robust automation
+and become more reliable.
+Rollbacks become a great tool
+to ensure stability for customers.
+They're no longer a bad thing.
+They're a good thing because they allow us
+to prevent customers from experiencing errors or downtime.
+Rollbacks also don't hurt the developers
+because the developers can roll forward with a fix
+as soon as they have one.
+And finally, Continuous Delivery and Continuous Deployment
+will give you fearless deployments.
+This robust automation,
+when coupled with the ability to rollback quickly
+and reliably means that deployments are commonplace,
+everyday events.
+They're not this big scary event
+that has everyone gripping their desk in fear,
+hoping that nothing goes wrong.
+So now you understand Continuous Delivery
+and Continuous Deployment.
+I hope that this knowledge will help you achieve faster
+and more reliable deployments in the future.
