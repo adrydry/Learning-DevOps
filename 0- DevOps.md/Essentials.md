@@ -406,3 +406,106 @@ So now you understand Continuous Delivery
 and Continuous Deployment.
 I hope that this knowledge will help you achieve faster
 and more reliable deployments in the future.
+
+
+## What is IAC
+Infrastructure as code is also known as IaC.
+And it means managing and provisioning infrastructure
+using code and automation.
+With infrastructure as code,
+instead of doing things manually
+to manage and provision infrastructure,
+we use automation and code
+to create and change things like servers,
+instances, environments, containers, clusters,
+entire groups of servers,
+and other types of infrastructure.
+So what does infrastructure as code look like?
+Well, without infrastructure as code,
+this is how we manage changes
+to some of our resources.
+You might SSH into a host
+and manually issue a series of commands
+in order to perform a change.
+But with infrastructure as code,
+you would instead change code files or configuration files
+that can be used alongside automation tools
+to actually perform those changes.
+You would then commit those files to source control,
+treating them like code,
+and then you would use an automation tool
+to enact the changes defined in those code
+or configuration files,
+and actually make the changes in your live environments.
+With infrastructure as code,
+provisioning new resources,
+as well as, changing existing resources
+are things that are both done through automation.
+So why should you do infrastructure as code?
+Well, first you get consistency in the creation
+and management of your infrastructure resources.
+Automation has the benefit
+that it will run the same way every time
+and do the same things every time.
+Humans tend to do things a little differently each time.
+So you get a lot of consistency
+in terms of how things are done
+within your actual environments.
+Secondly, you get reusability.
+When you use infrastructure as code,
+you can take that code,
+those code files or configuration files
+that you use to make your change,
+and you can use it to make the same change, consistently,
+across multiple hosts.
+Or if you need to make the same change again in the future,
+you can use that same code again to do that.
+You also get scalability.
+So say for example,
+you need a new instance to add to a load balanced cluster.
+If you provisioned the existing instances,
+using infrastructure as code,
+you can take that code
+and use it to provision a new instance
+that is configured exactly the same way
+as the existing instances,
+in a very short time, minutes or even seconds,
+allowing you to quickly scale up or scale down.
+Another great benefit of infrastructure as code
+is that it makes your infrastructure self-documenting.
+With infrastructure as code,
+your infrastructure and any changes made to it
+are documented through the changes made to those code
+and configuration files
+that are used to provision the infrastructure
+and execute changes.
+For example, the way that a particular server is configured
+can be viewed in source control.
+Whereas with the traditional model,
+understanding how the server is configured
+is a matter of knowing who logged into it
+and what commands they executed.
+And finally, infrastructure as code
+helps you simplify the complexity.
+Complex infrastructures can be stood up quickly
+once they are defined as code.
+For example, if you have a complex infrastructure
+involving several database servers,
+maybe an authentication server,
+some application servers
+and your organization requests a new test environment,
+you can take the code that was used
+to configure that infrastructure
+and immediately spin up an identical infrastructure,
+possibly even temporarily,
+in order to satisfy the needs of your organization.
+It makes it much easier to manage that complexity
+when you use infrastructure as code.
+So now you understand infrastructure as code.
+In my time as an operations engineer,
+we used Ansible to standardize
+around infrastructure as code, as a practice.
+And we found that it made our complex infrastructure
+much more manageable and maintainable.
+I hope that you will be able to use infrastructure as code
+to obtain the same benefits going forward.
