@@ -509,3 +509,99 @@ And we found that it made our complex infrastructure
 much more manageable and maintainable.
 I hope that you will be able to use infrastructure as code
 to obtain the same benefits going forward.
+
+
+## Configuration Managment
+Configuration management essentially just means
+automated management of infrastructure configuration.
+Changes are a normal part of day-to-day life
+in the IT industry.
+They always need to happen.
+We always need to make changes
+to keep our infrastructure up to date
+and to meet changing business needs.
+Configuration management is about doing these changes
+in a maintainable way.
+Configuration management is a way
+of minimizing configuration drift.
+Configuration drift is the accumulation
+of all of the small changes
+that are made to systems over time
+and then cause those systems to become different
+from one another.
+If you think about it,
+every time someone logs into a system and makes a change,
+there's a chance that they have now made
+that system different from other systems
+that you manage when they really should be standardized.
+Configuration management helps us
+to minimize configuration drift
+by rolling out changes and managing configurations
+across a complex infrastructure
+in an automated and centralized way.
+There is a close relationship
+between configuration management and Infrastructure as Code.
+Infrastructure as Code is a very beneficial tool
+that goes hand in hand with configuration management.
+So, what does configuration management look like?
+Well, the best way to describe it is to give an example.
+Let's say that we need to upgrade a software package
+on a bunch of servers.
+Without good configuration management,
+what we would do is log into each server
+and perform the upgrade manually.
+The problem is this process can lead to a lot of problems.
+Maybe we forgot about one of the servers
+because we didn't have good documentation on it,
+and therefore the software package
+was not upgraded on that server,
+or perhaps, while we are in the process
+of rolling out these upgrades
+to a variety of different servers,
+there is a temporary version mismatch
+which causes something to break
+while we're in the process of manually doing that.
+On the other hand, with good configuration management,
+what we do is define a new version of the software package
+that we want in a configuration file or tool,
+and then we use that tool
+to automatically roll the change out
+across a variety of servers within our infrastructure.
+Configuration management
+is about managing your configuration
+somewhere outside of the servers themselves.
+So, in the case of the example here,
+we are managing it in configuration files
+that are then applied using a configuration management tool.
+Why should you do configuration management?
+First, it saves time.
+It takes less time to roll out configurations
+because of the benefits of automation.
+Secondly, good configuration management tools
+will provide you insight.
+Not only are they able to roll changes out to servers,
+they give you insight into what the current state
+of your infrastructure is.
+So they can allow you to have a better understanding
+of what has been rolled out to your servers
+and what their configuration is at present.
+Configuration management is very good for maintainability,
+and this is very important
+because a maintainable infrastructure
+is easier to change in a stable way.
+Change always introduces the risk of instability,
+but the more maintainable your infrastructure is,
+the lower that risk is.
+Configuration management also minimizes configuration drift.
+This means that it's easier to keep a standard configuration
+across a multitude of hosts when you're not depending
+on manually logging into hosts and making changes,
+but you're using automation to ensure
+that changes are rolled out to all hosts equally.
+Configuration management is a very important tool
+for DevOps.
+Good DevOps infrastructures, especially in the cloud,
+can become very, very complex.
+You're going to need configuration management
+in order to manage that complexity
+in a stable and maintainable way.
