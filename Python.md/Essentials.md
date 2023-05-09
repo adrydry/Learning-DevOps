@@ -29,6 +29,13 @@ We will see how to install the python interpreter and how to connect to the pyth
 - python --version and pip --version need to match otherwise python will be not able to communicate with the interpreter 
 - pip ls
 
+## Why using Pyton on Devops
+
+Python is used as an automation tool by devops engineers, in multiple scenarios:
+- Allows you to write a script to stop all your development servers on weekend
+- Clean your VM
+- Attach a new disk to your ec2 when the cloudwatch alerts you for example that the performance of your ec2 is greater than 80%
+
 ## Variables, Data types and operators
 
 
