@@ -19,8 +19,14 @@ Elastic Compute Cloud. It uses to provide
 - enable organizations to deploy applications faster without investing in hardware upfront
 - host your application
 - host your databases
+- Object storage. 
 
 ## S3 Bucket
+Simple Storage bucket. It is a storage that help users to upload n numbers of files. the advantages of S3:
+-Security
+- Durability
+- Highly scalable
+In a S3 bucket, we have the ability to save between **0byte to 5 terabyte**. 
 
 
 ## IAM Roles and Policies
