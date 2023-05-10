@@ -14,7 +14,11 @@ Private IP is static and will be the same through the lifecycle of the instances
 - It helps to create subnet. We have 2 types: **private subnet** is a subnet where the route table is not associated with the internet gateway and **public subnet** is a subnet where the route table is associated with the internet gateway
 
 ## EC2
-
+Elastic Compute Cloud. It uses to provide 
+- Scale computing capacity
+- enable organizations to deploy applications faster without investing in hardware upfront
+- host your application
+- host your databases
 
 ## S3 Bucket
 
