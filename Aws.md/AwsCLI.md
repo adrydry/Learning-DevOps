@@ -46,3 +46,17 @@ to display a particular key. For this key, it will be possible to see the name o
 
 This is the command
 ![1](https://github.com/adrydry/Learning-DevOps/assets/102819001/81b3a777-2de7-4a35-9f1c-dbde76386ec4)
+We can also update a server, rename it, delete it from the AWSCLI
+
+## How to manage S3 with AwsCLI 
+From AWScli, we can easily create a S3 bucket and put folders and files inside. Just follow steps 
+
+![1](https://github.com/adrydry/Learning-DevOps/assets/102819001/0305c2cd-7c99-4755-bfc0-88005a07a684)
+
+
+
+
+
+
+
+
