@@ -36,5 +36,44 @@ Identity Access Management is used to:
 - allows users to do only task related to their job in the Aws console
 EX: We have an EC2 Instances where an application is running. This application wants to access only the S3 bucket. The **Iam role attach the Policy** helps to authenticate the access to the s3 bucket 
 
+## AWS CICD 
+These services will be used by the Devops Engineer to automate the process of development and deployment of applications. We have:
+
+**Aws Code Commit/ Code Built/ Code Deploy**: it's like a github repository. Github is a central repository for source code managment hosted in AWS. So code commit helps to :
+- create repository any numbers of repository
+- control all the repository created: manage the access to the repository
+
+Workflow: Developpers commit the code  in the **code commit**, the code is compile to generate an artifact using **code build**. 
+
+Code build connects to code commit or any external source code managment repository and rruns different unit tests. Every time, the developpers add new features on the code, the new code is automatically rebuild to obtain the latest artifact. 
+
+The artifact is deployed on production, on server, on EKS, ECS, Lamda with **code deploy**. Code Deploy allows you to deploy your build artifact on differents compute infrastructures
+
+**Code Pipelines** helps the Devops Engineers by automatically detects any new changes commit by the developpers and start building your source code, automatically deploys the artifacts on differents environnements (testing env, production environnement). So Code pipelines facilitates the process from code commit to Code deploy by creating **Pipelines**
+
+## Infrastructures
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
