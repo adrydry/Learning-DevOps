@@ -30,3 +30,11 @@ In a S3 bucket, we have the ability to save between **0byte to 5 terabyte**.
 
 
 ## IAM Roles and Policies
+Identity Access Management is used to:
+- set users permissions and roles to grant access to different AWS services;
+- It enables organizations to create multiple users with their own credentials;
+- allows users to do only task related to their job in the Aws console
+EX: We have an EC2 Instances where an application is running. This application wants to access only the S3 bucket. The **Iam role attach the Policy** helps to authenticate the access to the s3 bucket 
+
+
+
