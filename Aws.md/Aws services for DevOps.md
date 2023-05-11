@@ -73,10 +73,28 @@ We can also use **Terraform** which works for multicloud providers
 
 
 ## Security Services in AWS
+
 We have to secure our services with:
--**IAM Role with policy**:
--**VPC security group**:
--**Cloudtrail**:
+
+-**IAM Role with policy**: It is the easiest way to secure our infrastructure. The user who is authorized and authenticate can will perform certain jobs. With IAM roles, you manage which user can access which resources and service ?
+
+-**VPC security group**: It's an entity that can be attached to any infrastructure.
+
+-**Cloudtrail**: It allows you to monitor, auditing and record activities across your infrastructure. It answers to Who access something? What did they access? When did they access?...It will help you to track any activity done by users or hackers inside your aws account
+
+## Monitoring
+
+Is important to monitor your infrastructures. We have many monitoring services in AWS:
+
+-**Cloudwatch**:
+
+-**Metrics**: Piece of informations about a paticular service overtime. For different aws services, we will have different aws metrices. For ex, we have host our application on EC2 instances, how to monitor our instances? which elements are important for the monitoring?: cpu utilization (dont need to go so high). These metrics need to be in form of **graph**
+
+-**Alarms**: Notify you when something is not going well. For that, we have to attach an alarm with the metrices. For exp: Cpu utilization >90% for 15 minutes, something is going wrong. with the alarm, the devops will have the information and will make sure to autoscale.
+
+-**Logs**: contains critical informations like what application is doing?. It will give you information about an application in amount of time. go to **Cloudwatch insights** to find logs
+
+-**Dashboards**: as devops engineer, the responsability is to make sure that the application is running continuously by creating a dashboard. you can add different types of metrices to your dashboard, set differents alarms and logs.
 
 
 
