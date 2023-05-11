@@ -14,7 +14,7 @@ Private IP is static and will be the same through the lifecycle of the instances
 - It helps to create subnet. We have 2 types: **private subnet** is a subnet where the route table is not associated with the internet gateway and **public subnet** is a subnet where the route table is associated with the internet gateway
 
 ## EC2
-Elastic Compute Cloud. It uses to provide 
+Elastic Compute Cloud is a physical virtual server. It uses to provide 
 - Scale computing capacity
 - enable organizations to deploy applications faster without investing in hardware upfront
 - host your application
@@ -52,6 +52,32 @@ The artifact is deployed on production, on server, on EKS, ECS, Lamda with **cod
 **Code Pipelines** helps the Devops Engineers by automatically detects any new changes commit by the developpers and start building your source code, automatically deploys the artifacts on differents environnements (testing env, production environnement). So Code pipelines facilitates the process from code commit to Code deploy by creating **Pipelines**
 
 ## Infrastructures
+
+**Compute infrastructures**
+
+-**EKS**:elastic kubernetes services host our k8s application.
+
+-**ECS**: elastic container service will help you to deploy your service, your tasks that run on Docker container.
+
+-**Aws Lambda**: is a serveless compute service. It's automatically scaling, it helps to run ad hoc jobs, it helps for automation some tasks. we can integrate our lamda with cloudwatch
+
+**create and manage our infrastructure**: 
+in a situation where you have to create 100 servers, it will be difficult to it manually. So , we can use:
+
+- **IAC**: as **Cloudformation** for AWS. you define a template in yaml or json format. In the template, we define all the ressurces, we want to create. Go to cloudformation and search for Stack and upload your json or yaml files. The file will be validated and will create automatically all the resources listed in the file. 
+To create, IAC, we can also use **CDK - cloud development hit** ### from **CFT**: CDK allows you to write actual code to create infrastructure by using differents constructs like For loop, white loop,...
+
+We can also use **Terraform** which works for multicloud providers
+
+- **Coding or programming language**:
+
+
+## Security Services in AWS
+We have to secure our services with:
+-**IAM Role with policy**:
+-**VPC security group**:
+-**Cloudtrail**:
+
 
 
 
