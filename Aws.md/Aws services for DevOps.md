@@ -78,6 +78,10 @@ We have to secure our services with:
 
 -**IAM Role with policy**: It is the easiest way to secure our infrastructure. The user who is authorized and authenticate can will perform certain jobs. With IAM roles, you manage which user can access which resources and service ?
 
+- Enable Multifactor Authentification for the root account
+
+- Set a password policy for my users: At leat one uppercase, one character,...
+
 -**VPC security group**: It's an entity that can be attached to any infrastructure.
 
 -**Cloudtrail**: It allows you to monitor, auditing and record activities across your infrastructure. It answers to Who access something? What did they access? When did they access?...It will help you to track any activity done by users or hackers inside your aws account
