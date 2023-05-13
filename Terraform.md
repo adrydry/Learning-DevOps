@@ -25,7 +25,9 @@ We will configure the AWS provider that will give Terraform access to the AWS AP
 ## Initialise our terraform directory
 For tha, we use the command **git init**
 
-![1](https://github.com/adrydry/Learning-DevOps/assets/102819001/06090ab0-45fe-4f81-b6bb-428c2ce1a07d)
+![1](https://github.com/adrydry/Learning-DevOps/assets/102819001/722fb02f-d6d4-4b2e-ab53-b6438023714c)
+
+After creating this file, terraform create a **.terrafom folder** and a **.terraform.lock.hcl** to record the provider selections it made above. Include this file in your version control repository so that Terraform can guarantee to make the same selections by default when you run "terraform init" in the future.
 
 
 ## Terraform Plan
@@ -33,27 +35,45 @@ For tha, we use the command **git init**
 Inside, this file, we will define the Api for the VPC. Go on terraform registry, copy the Api code and, paste it in the terminal and make modifications.
 Terraform plan will check my code and will let me know if something need to be change
 
-![1](https://github.com/adrydry/Learning-DevOps/assets/102819001/8a6a52ee-0ef6-4e7c-bd97-d9e0a26cd722)
+![1](https://github.com/adrydry/Learning-DevOps/assets/102819001/2fa27309-c612-47af-ac5d-173bdd12cfe8)
+
+
+![1](https://github.com/adrydry/Learning-DevOps/assets/102819001/e73b1481-35b3-4dff-8aa4-e649ab24ebe7)
+
 
 ## Terraform Apply
 Will help us to execute our main.tf files
 
-![1](https://github.com/adrydry/Learning-DevOps/assets/102819001/b6122d05-91ad-4ed4-beba-de364d4427f0)
+![1](https://github.com/adrydry/Learning-DevOps/assets/102819001/612b2cd6-5711-4062-9af3-b0a1ea303e4a)
+
 
 My vpc is created and visible on the console
 
-![1](https://github.com/adrydry/Learning-DevOps/assets/102819001/b670adce-2964-440e-ba4d-2fcc99e22687)
+![1](https://github.com/adrydry/Learning-DevOps/assets/102819001/d2a0d588-c399-4c2a-8a2f-95bb83f83a44)
+
+Observed that, terraform apply creates a new file **terraform.tfstate
+
+## How Terraform maintains the state of our infrastructure
+
+It does that with the **state file**. To see what is the state, Use the command sudo apt install jq and terraform show -json | jq
+
+![1](https://github.com/adrydry/Learning-DevOps/assets/102819001/7db3b0a0-f8e2-4205-9200-d59bee624bf7)
+
+We see that, even if we described the file, we still have some information. We can also view the ressources directly by using **terraform show**. The command **terraform state list** will help to list all the ressources and their information. Never modified the terraform tfstate.
+
+![1](https://github.com/adrydry/Learning-DevOps/assets/102819001/4d72e595-cce0-45ec-9944-faeb6ecb392e)
 
 
-- 
+## How to secure our terraform.tfstate
+Due to his importance, it's good to secure this file. For that, we need to migrate this file from our local computer to the Hashicorp cloud. We can store this file in the S3 bucket. But in our case, we will store that in the Hashicorp cloud because it's more secure and easy to manage
 
+## Exploring the state file
 
+**terraform state show ressource name** will show you the terraform show of a particular ressource
+**terraform state show aws_vpc.terransible_vpc** display the json format version of terraform show
 
-
-
-
-
-
+## Add Variables
+It's required by Terraform to have *{}* at the end of the name of the variable. It helps to initialize variables
 
 
 
