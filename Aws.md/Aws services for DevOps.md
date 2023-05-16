@@ -74,9 +74,14 @@ We can also use **Terraform** which works for multicloud providers
 
 ## Security Services in AWS
 
+Whenever we connect with the root account, we should never use the root account for any activity
 We have to secure our services with:
 
--**IAM Role with policy**: It is the easiest way to secure our infrastructure. The user who is authorized and authenticate can will perform certain jobs. With IAM roles, you manage which user can access which resources and service ?
+- **Enable Multifactoor Authentification for all users**: we have 3 types of MFA. By default, we connect to AWS account as a Root User. The # between the root user and the administrator access is whenever we create a user using this administrator access, this user will not be able to see the billing dashboard by default. For that he needs to have this particular permissions
+- **Use Security key** as a usb key (Yubikey) which generate a random character to secure the application
+- **Hardware key** to secure the hardware (Serial number of the device, MFA code 1 and 2)
+
+- **IAM Role with policy**: It is the easiest way to secure our infrastructure. The user who is authorized and authenticate can will perform certain jobs. With IAM roles, you manage which user can access which resources and service ?
 
 - Enable Multifactor Authentification for the root account
 
@@ -85,6 +90,10 @@ We have to secure our services with:
 -**VPC security group**: It's an entity that can be attached to any infrastructure.
 
 -**Cloudtrail**: It allows you to monitor, auditing and record activities across your infrastructure. It answers to Who access something? What did they access? When did they access?...It will help you to track any activity done by users or hackers inside your aws account
+
+- **Configure the user groups**
+
+ 
 
 ## Monitoring
 
