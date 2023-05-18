@@ -27,7 +27,7 @@ Simple Storage bucket. It is a storage that help users to upload n numbers of fi
 - Durability
 - Highly scalable
 In a S3 bucket, we have the ability to save between **0byte to 5 terabyte**. 
-
+S3 is a global infrastructure not free 
 
 ## IAM Roles and Policies
 Identity Access Management is used to:
@@ -35,7 +35,7 @@ Identity Access Management is used to:
 - It enables organizations to create multiple users with their own credentials;
 - allows users to do only task related to their job in the Aws console
 EX: We have an EC2 Instances where an application is running. This application wants to access only the S3 bucket. The **Iam role attach the Policy** helps to authenticate the access to the s3 bucket 
-
+Iam is a free service and Global infrastructure
 ## AWS CICD 
 These services will be used by the Devops Engineer to automate the process of development and deployment of applications. We have:
 
