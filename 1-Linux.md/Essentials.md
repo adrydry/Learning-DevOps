@@ -57,13 +57,14 @@ If l use Ubuntu, l can run:
 - **last**: Show the last person logging in the system and also the time where yhe system was rebooted
 - **uptime**: To see for how long the system is running
 - **clear**: To keep your screen empty
-- **man (infront a command)**: Open the documentation related to a command
+- **man (in front a command)**: Open the documentation related to a command
 - **info** Provide more informations than Man command
+- **tr** helps to convert file. Ex: cat filename1 | tr a-z A-Z > filename 2: This command convert from lowercase to uppercase all content from filename1 to a new filename
 - **tar xzf** : to unzip a file
 - **htop**: give information 
 - **scp filename**: to copy a file from my computer to my linux cli
 - **cat /etc/*release**: to see the list of all the release file
-- **cat /etc/*issue*: to see the list of all issues files
+- **cat /etc/*issue**: to see the list of all issues files
 - **wc -l filename**: give a total of lines of a file
 - **wc -L**: Give the number of characters of the longest line
 - **wc -m**: give the total number of character of the file
@@ -77,6 +78,7 @@ If l use Ubuntu, l can run:
 - **pipe** or **|** is used to display an output from another command. Ex: cat filename **|** grep word, or cat filename **|** grep word **|** wc -l
 - **!command** will display the last time the command was used.  Ex: !wc or !cat
 - **cat /etc/password** to see list of users of the home directory. To see for a specific user, use cat /etc/password **|** **grep** username. If l just want the home directory, l can use cat /etc/password **|** **grep** username **|** **cut -d: column number oh the home directo*
+- **cat > filename** to create a file
 - **>** used for redirection. EX: cat filename | grep xxxxx will result 5 lines. If l want this result to directly go inside a file l can use cat filename | grep xxxxx **>** new filename
 - **>>** to redirect in a same file the result of another research. The result 1 and result 2 will go inside the same file otherwise the 2nd result will erase the 1rst one
 - **| sort** will help to display a result in the alphabetical way. EX cat filename | sort. If l want to put the result in a new file, l will use ** cat filename | sort > **sorted.txt**
@@ -99,9 +101,9 @@ If l use Ubuntu, l can run:
 - **df -h** for see number of secondary storage (hdd/ssd/dvd) available; and search /dev/xvda1
 - **ifconfig** used to assign an address to a network interface and to configure or display the current network interface configuration information.
 - **dsmesg** used to see all messages inside the kernel
-- 
+- **where applicationxxx** help you to know where the information related to a downloaded application we be stored in the computer
 
-## The most important logs in Linux OS
+## The m  ost important logs in Linux OS
 
 **/var/log/messages** General system logs and messages
 **/var/log/syslog** For Debian based systems. Is the general logs for the system
