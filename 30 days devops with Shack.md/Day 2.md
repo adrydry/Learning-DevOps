@@ -26,10 +26,15 @@ Maven has 3 lifecycles: clean, default and site
 **Default lifecycle**: has 5 steps
  
  1- **Validate**: Validates the project structure and verifies if all necessary information is available. It will search if pom.xml file is here or not - **mvn validate**
+ 
  2- **Compile**: compile the project source code - **mvn compile**. It will searchs if there is any error on the syntax of the code
+ 
  3- **Test**: Runs unit test against compile source code - **mvn test**
+ 
  4- **Package**: Packages the compiled code into a distributable format with all the dependencies (e.g: jar, war) - **mvn package**
+ 
  5- **Install**: Installs the packages into the local repository (.m2) for use as a dependency in other projects - **mvn install**
+ 
  6- **Deploy**: Deploys the package to a remote repository for sharing with other developpers or environments - **mvn deploy** The package will be push to the artifact repository as Nexus (repository for artifact).
  
 NB Each command will run the previous one  
