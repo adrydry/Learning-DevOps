@@ -81,13 +81,28 @@ By contrast, **management in the cloud versus** refers to how we are able to man
 Azure CLI, command line environment, and programmatic methods like APIs. So wrapping things up, that was a lot of info that we provided of terms and definitions
 and all of them are very important to understand.
 
+## Azure Architecture
 
+As defined by Microsoft, a region is a set of datacenters deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network. "A set of datacenters" means that each region has more than one datacenter.
 
+Availability Zones are unique physical locations within an Azure region. Each zone is made up of one or more datacenters equipped with independent power cooling and networking. And each region that supports Availability Zones -- because not all do -- has a minimum of three separate zones. The physical separation of Availability Zones within a region protects applications and data from datacenter failures.
 
+## Ressource Group and Ressource Manager
 
+**Ressources Groups** are essential for any architecture on Azure. Everything in Azure is inside a resource group. No exceptions. And while all resources must be inside a resource group, the resource group itself is not a resource. A resource group can contain resources that are located in different regions.
+For example, you could have a central database server in East US and your web application could be hosted in East US2, but they are in the same resource group,
+as they are related. A resource group can be used to manage access control for administrative actions. You can give access to an entire resource group, including the resources in it. A resource can interact with resources in other resource groups. And even though a resource group isn't a resource itself, it still needs a location, as it stores metadata about the resources inside it.
 
+**Azure Resource Manager**, or ARM, is the underpinning of everything on Azure when it comes to creating, updating, or deleting resources. It is deployment and management services for Azure. The key thing to know is that if you interact with any of the resources on Azure, it goes through the ARM. Whether you use the portal, PowerShell, Azure CLI, REST APIs, or client SDKs, the Azure Resource Manager API handles your request.
 
+This also means that any functionality available or added to the ARM will be available in all the various tools within a shorter period of time. By Azure having a single entry point for managing resources, you get a bunch of benefits as well. You can deploy, manage, and monitor all the resources for your solution as a group
+rather than handling these resources individually. When you deploy your resources, you can be confident it happens in the same way every single time.
 
+You can define the dependencies between resources, ensuring that any new resources don't step on the toes of the others. And you can easily decide which users have access to which resources using built-in features in the ARM. You can logically organize all your resources using the tag feature. **Tagging** is assigning a label for each resource you can then sort and perform actions on. And you can clarify your organization's billing by viewing costs for a group of resources
+sharing the same tag.
+
+So in summary, resource groups are what every resource in Azure is inside. While it isn't the resource itself, it is critical to manage your resources. It is completely up to you which resources you place in which resource groups, and it is an opportunity to structure how your Azure infrastructure is managed.
+Azure Resource Manager, or ARM, is the layer of the Azure architecture which every single interaction with Azure resources go through. Whether you use the portal, the CLI, or some other tool, it talks to Azure through the ARM.
 
 
 
