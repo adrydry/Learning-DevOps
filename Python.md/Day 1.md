@@ -1,1 +1,1 @@
-
+Python is a high level (Easily readable by human), versatile (it can be used for devops, data analyst and so on) and dynamically typed (we dont need to define the data type of the variable) programming language. 
