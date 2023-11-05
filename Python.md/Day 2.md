@@ -25,7 +25,11 @@
   **string data type** like a = "Adrienne"
   We can use "" or ''. But if a string content already **'**, we need to put **""**
   - if your string is on more than one line, we need to put **'''** at the beginning and the end of this string
-  **Boolean Data type**
+    
+  **Boolean Data type** like variable a = true   or  variable b = false
+
+  **List Data type** refers to collection of items which can be of different types like   a = [1,2,3, 'adrienne', true]. List is mutable. After creating a list, we can change the value. Ex: if we write a[0]=6   that's means our new list will be  a= [6,2,3, 'adrienne', true}
+  **tuple Data Type**: is similar to list but the difference is that tuple is **immutable**. Tuple syntax is b = **(** 1,2,3, 'adrienne', true **)**
   
 
 
