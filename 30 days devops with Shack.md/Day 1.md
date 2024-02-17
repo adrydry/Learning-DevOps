@@ -1,6 +1,6 @@
 ## DAY 1: WHAT IS DEVOPS
 
-Def DevOps is a set of practices that help to move code from the development to the operation troughout different phases as Building, testing, security analysins, deployement and monitoring.
+Def DevOps is a set of practices that help to move code from the development to the operation troughout different phases as Building, testing, security analysis, deployement and monitoring.
 
 ## What to do to apply the Devops process in our application?
 
@@ -8,17 +8,17 @@ For that, we can use the CI/CD process to follow to ensure that our application 
 
 **CI** is means that every time every developper makes a change to the code due for example to the new requirements of the client in the shared repository, these changes will be integrated without affecting the live production environnement. EX: Client gives 3 new requirements (features) for his application. 3 developpers will make a copy of the main branch (feature branch) and the operation teams will create a pipeleine for each new feature branch. When the developpers commit his change in the feature branch, someone of the operation team will start the pipeline (build,test,) and deploy to a temporaly server, see if it's working or not. Incase, it's not working, developpers will make a change again. These 03 features can be tested at the same time and when everything it's ok, we can push the change to the main branch. 
 
-**Processes inside the CI**: build - automation build - reporting the result
+**Processes inside the CI**: developpers doing code commit ; operation team build the application and find is everything is fine or not - run the build automatically using tools like jenkins - Results are reported when the build is fine.
 
-**CD** To ensure that the changes of the CI will be go in production, we need to deploy them to different environments:
+**Cont. Deployment** To ensure that the changes of the CI will be go in production server, we need to deploy them to different environments (servers):
 
 **Dev env**: First deployment is done in this environment after the developpers committed the changes. If the changes are correct, there are deployed to the QA env;
-**QA env**: Quality Assurance development. we test our changes
-**PPD env**: Pre release env, it's similar to Prod env
+**QA env**: Quality Assurance envrironment. we test our changes;
+**PPD env**: Pre release env, it's similar to Prod env;
 **Prod env**: where the application run live, accessible to clients
 **DR**: Disaster recovery environment will help us to roll back incase we have any issue with the prod env. We use the env for deployment, so that our application runs fine all the time.
 
-When we completed automatically the deployment, that's **continuous deployment** bu when we need a manual effort, like pushing a buttom for deployment, that's **Continuous delivery** 
+When we completed automatically the deployment, that's **continuous deployment** but when we need a manual effort, like pushing a buttom for deployment, that's **Continuous delivery** 
 
 **Processes inside CD**: Deployment pipeline (Deploy the change to our server) - Automated deployment - testing - Release and rollback - Monitoring
 
