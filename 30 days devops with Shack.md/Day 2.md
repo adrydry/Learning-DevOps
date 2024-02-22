@@ -2,13 +2,13 @@
 
 Maven is a build automation tool and project management tool. We use Maven to:
 - Create the java based project;
-- Modify different things inside the project
+- Build and Modify different things inside the project
 
 ## Structure of a Java based Project
 
 - scr : this folder contains the main source code of our project
-- pom.xml: Files that contains different informations, properties, plugins: to perform different tasks, dependencies about the application. This file can be modified based on the requirements.
-When we run any maven command, it searchs first for the pom.xml file because it contains all the informations to be used for the application.
+- pom.xml: Files that contains different informations, properties, plugins: to perform different tasks, dependencies about the application. This file can be modified based on the requirements. 
+When we run any maven command, it searchs first for the pom.xml file because it contains all the informations to be used for the application (which dependencies, which plugins,...).
 
 ## How to create Java based project using maven
 
