@@ -1,8 +1,10 @@
 ## DAY 2: WHAT IS MAVEN?
+After pushing our code in the github repository, the next step is to buils our source code in an executable format so that our application is up and running and accessible.
 
 Maven is a build automation tool and project management tool. We use Maven to:
 - Create the java based project;
-- Build and Modify different things inside the project
+- Build and Modify different things inside the project;or
+- build and package application so that we can execute the application at anytime.
 
 ## Structure of a Java based Project
 
@@ -11,7 +13,7 @@ Maven is a build automation tool and project management tool. We use Maven to:
 When we run any maven command, it searchs first for the pom.xml file because it contains all the informations to be used for the application (which dependencies, which plugins,...).
 
 ## How to create Java based project using maven
-
+it's a task of developpers to create java project
 - Go to **start.spring.io** to initialize your project
 - select java
 - give a name to your project
